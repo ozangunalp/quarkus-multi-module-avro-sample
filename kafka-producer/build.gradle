@@ -10,11 +10,11 @@ repositories {
 
 dependencies {
     implementation enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}")
-    implementation 'io.quarkus:quarkus-apicurio-registry-avro'
+    implementation 'io.quarkus:quarkus-confluent-registry-avro'
     implementation 'io.quarkus:quarkus-smallrye-reactive-messaging-kafka'
     implementation 'io.quarkus:quarkus-resteasy-reactive-jackson'
     implementation 'io.quarkus:quarkus-arc'
-//    implementation project(':shared-avro')
+    implementation project(':shared-avro')
     testImplementation 'io.quarkus:quarkus-junit5'
 }
 
